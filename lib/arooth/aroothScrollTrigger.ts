@@ -1,8 +1,8 @@
 import type Lenis from "lenis";
-import { connectLenisScrollTrigger } from "@/lib/lenisScrollTrigger";
+import { connectLenisScrollTrigger, getActiveScroller } from "@/lib/lenisScrollTrigger";
 
 export function getAroothScroller() {
-  return document.documentElement;
+  return getActiveScroller() ?? (typeof window !== "undefined" ? window : undefined);
 }
 
 export function ensureLenisScrollTrigger(lenis: Lenis | undefined) {

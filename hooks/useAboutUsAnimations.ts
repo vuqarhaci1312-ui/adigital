@@ -96,9 +96,9 @@ export function useAboutUsAnimations(
     () => {
       registerGsap();
       const root = scopeRef.current;
-      if (!root || !lenis) return;
+      if (!root) return;
 
-      connectLenisScrollTrigger(lenis);
+      if (lenis) connectLenisScrollTrigger(lenis);
 
       const mm = gsap.matchMedia();
 

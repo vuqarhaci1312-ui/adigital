@@ -6,7 +6,6 @@ import { useGSAP } from "@gsap/react";
 import { gsap, registerGsap } from "@/lib/gsap";
 import { getAroothScroller } from "@/lib/arooth/aroothScrollTrigger";
 import {
-  connectLenisScrollTrigger,
   refreshScrollTriggers,
 } from "@/lib/lenisScrollTrigger";
 import { splitTextPreserveStructure } from "@/lib/splitText";
@@ -178,9 +177,6 @@ export function useSynexAiAnimations(
   useGSAP(
     () => {
       registerGsap();
-      if (!lenis) return;
-
-      connectLenisScrollTrigger(lenis);
 
       const introSection = introRef.current;
       const featureSection = featureRef.current;

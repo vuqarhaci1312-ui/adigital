@@ -20,9 +20,17 @@ function ScrollTriggerLenisSync() {
     lenis.on("scroll", ScrollTrigger.update);
     refreshScrollTriggers();
 
+    const onResize = () => refreshScrollTriggers();
+    window.addEventListener("resize", onResize, { passive: true });
+    window.addEventListener("orientationchange", onResize, { passive: true });
+    window.visualViewport?.addEventListener("resize", onResize, { passive: true });
+
     return () => {
       lenis.off("scroll", ScrollTrigger.update);
       disconnectLenisScrollTrigger();
+      window.removeEventListener("resize", onResize);
+      window.removeEventListener("orientationchange", onResize);
+      window.visualViewport?.removeEventListener("resize", onResize);
     };
   }, [lenis]);
 
@@ -48,7 +56,15 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
   }, []);
 
   return (
-    <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
+    <ReactLenis
+      root
+      ref={lenisRef}
+      options={{
+        autoRaf: false,
+        syncTouch: false,
+        smoothWheel: true,
+      }}
+    >
       <ScrollTriggerLenisSync />
       {children}
     </ReactLenis>

@@ -176,6 +176,31 @@
     column-gap: 0;
     min-width: 0;
   }
+
+  /* CSS fallback: real phones must not wait for GSAP hydration */
+  @media (max-width: 39.99rem) {
+    .nav-links-group .nav-hide {
+      display: none !important;
+      width: 0 !important;
+      max-width: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      opacity: 0 !important;
+      overflow: hidden !important;
+      pointer-events: none !important;
+      visibility: hidden !important;
+      position: absolute !important;
+    }
+
+    .nav-links-group .nav-burger {
+      display: flex !important;
+      transform: scaleX(1) !important;
+    }
+
+    .nav-bar-button {
+      cursor: pointer;
+    }
+  }
 }
 
 @layer base {
@@ -211,8 +236,8 @@
   body {
     background-color: var(--color-white);
     color: var(--color-black);
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
   }
 }
 

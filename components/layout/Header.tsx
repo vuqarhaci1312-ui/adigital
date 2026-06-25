@@ -332,7 +332,7 @@ export default function Header() {
             ))}
             <div
               ref={burgerRef}
-              className="absolute right-0 h-7 w-7 origin-right scale-x-0 cursor-pointer flex-col items-center justify-center gap-1.5 p-1"
+              className="nav-burger absolute right-0 h-7 w-7 origin-right scale-x-0 cursor-pointer flex-col items-center justify-center gap-1.5 p-1"
             >
               <span
                 className={`bg-foreground block h-0.5 w-full transition-all duration-300 ease-in-out ${

@@ -1,11 +1,18 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import LenisProvider from "@/components/layout/LenisProvider";
 import Header from "@/components/layout/Header";
 import CustomScrollbar from "@/components/layout/CustomScrollbar";
 import CustomCursor from "@/components/layout/CustomCursor";
 import BodyReveal from "@/components/layout/BodyReveal";
 import ViewportScript from "@/components/layout/ViewportScript";
+import ViewportUnitsUpdater from "@/components/layout/ViewportUnitsUpdater";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   title: "AysDigital | Meta Ads, Google Ads, SEO və Rəqəmsal Marketinq",
@@ -43,6 +50,7 @@ export default function RootLayout({
         ))}
       </head>
       <body>
+        <ViewportUnitsUpdater />
         <LenisProvider>
           <BodyReveal>
             <Header />
