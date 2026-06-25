@@ -1,0 +1,52 @@
+Found 1 matches
+
+class="styles_news-card-footer__PfaZ4"><p>Birbank-dan hərbçilərə özəl sərfəli kredit təklifi: Hər 10 000 AZN kreditə aylıq 300 AZN-dən başlayan ödəniş </p><span>2026-06-23</span></div></div></a><a href="/news/birbank-in-s-yah-t-marafonu-kampaniyasinin-qalibl-rin-h-diyy-l-r-t-qdim-olundu"><div class="styles_news-card__BzfoH"><div class="styles_news-card-image__0K8bM"><img alt="news-img-background" loading="lazy" width="360" height="360" decoding="async" data-nimg="1" class="styles_image-background__Tz0Bs" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/S_yah_t_kampaniyasi_qalibl_r_1x1_d24b1a39d2.jpg"/><img alt="news-img" loading="lazy" width="360" height="360" decoding="async" data-nimg="1" class="styles_image-main__KIlW_" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/S_yah_t_kampaniyasi_qalibl_r_1x1_d24b1a39d2.jpg"/></div><div class="styles_news-card-footer__PfaZ4"><p>Birbank-ın “Səyahət marafonu” kampaniyasının qaliblərinə hədiyyələr təqdim olundu</p><span>2026-06-11</span></div></div></a><a href="/news/birbank-dan-yenilik-73-yasad-k-t-qauedcuel-r-kredit-ld-ed-bil-c-kl-r"><div class="styles_news-card__BzfoH"><div class="styles_news-card-image__0K8bM"><img alt="news-img-background" loading="lazy" width="360" height="360" decoding="async" data-nimg="1" class="styles_image-background__Tz0Bs" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/T_qauedcuel_r_kredit_verilm_si_1x1_a8db89dfdf.png"/><img alt="news-img" loading="lazy" width="360" height="360" decoding="async" data-nimg="1" class="styles_image-main__KIlW_" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/T_qauedcuel_r_kredit_verilm_si_1x1_a8db89dfdf.png"/></div><div class="styles_news-card-footer__PfaZ4"><p>Birbank-dan yenilik: 73 yaşadək təqaüdçülər kredit əldə edə biləcəklər</p><span>2026-06-10</span></div></div></a></div></div><div class="styles_container__p_HbS"><h3 class="styles_heading__dYXW0">Xidmətlər</h3><div class="styles_curr__uSi7i"><div class="styles_curr-data__Pti5V"><div><div class="styles_curr-data-content__HVAEe"><span class="styles_curr-data-content-head__oXtOx">Valyuta məzənnələri</span></div><div style="width:fit-content"><button class="styles_activeButton__KDQn8">Alış</button><button class="styles_inactiveButton__CLQYf">Satış</button></div><table class="styles_curr-data-table___7OQm"><thead><tr class="styles_curr-data-table-head-row__IUJQJ"><th>Valyuta</th><th>Mərkəzi bank</th><th>Nağd</th><th>Nağdsız</th></tr></thead><tbody class="styles_curr-data-table-body__PjxB2"><tr><td class="styles_curr-data-table-body-row-td__zMobA"><img alt="USD" loading="lazy" width="32" height="24" decoding="async" data-nimg="1" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/usd_3b70aee56d.svg"/><span style="margin-left:10px">USD</span></td><td>1.7000</td><td>1.6960</td><td>1.6960</td></tr><tr><td class="styles_curr-data-table-body-row-td__zMobA"><img alt="EUR" loading="lazy" width="32" height="24" decoding="async" data-nimg="1" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/eur_749f7bb080.svg"/><span style="margin-left:10px">EUR</span></td><td>1.9324</td><td>1.9070</td><td>1.8870</td></tr><tr><td class="styles_curr-data-table-body-row-td__zMobA"><img alt="GBP" loading="lazy" width="32" height="24" decoding="async" data-nimg="1" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/gbp_446c241805.svg"/><span style="margin-left:10px">GBP</span></td><td>2.2412</td><td>2.1960</td><td>2.1960</td></tr><tr><td class="styles_curr-data-table-body-row-td__zMobA"><img alt="RUB" loading="lazy" width="32" height="24" decoding="async" data-nimg="1" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/rub_81c69ee007.svg"/><span style="margin-left:10px">100 RUB</span></td><td>2.2735</td><td>2.0700</td><td>1.8600</td></tr><tr><td class="styles_curr-data-table-body-row-td__zMobA"><img alt="CHF" loading="lazy" width="32" height="24" decoding="async" data-nimg="1" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/chf_33456ab98a.svg"/><span style="margin-left:10px">CHF</span></td><td>2.0960</td><td>2.0660</td><td>2.0460</td></tr><tr><td class="styles_curr-data-table-body-row-td__zMobA"><img alt="TRY" loading="lazy" width="32" height="24" decoding="async" data-nimg="1" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/tr_c37037fa60.svg"/><span style="margin-left:10px">TRY</span></td><td>0.0365</td><td>0.0300</td><td>0.0230</td></tr><tr><td class="styles_curr-data-table-body-row-td__zMobA"><img alt="AED" loading="lazy" width="32" height="24" decoding="async" data-nimg="1" style="color:transparent" src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/aed_f56b040944.svg"/><span style="margin-left:10px">AED</span></td><td>0.4628</td><td>0.3700</td><td>0.4500</td></tr></tbody></table></div><div class="styles_curr-data-footer__lKFzn"><div class="styles_curr-data-footer-indicator__Ma9A5"><span>Kurslar bu tarixə təyin edilmişdir: 25-6-2026</span></div><div class="styles_curr-data-footer-switch___8Rce"><a class="styles_curr-data-footer-switch-link__uAaU0" href="/currency-rates"><span>Bütün məzənnələr</span><img src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/arrow_right_red_45cf2d45c7.svg" alt="arrow"/></a></div></div></div><div class="styles_services__JAthq"><a href="https://birbank.az/xidmet-sebekesi"><div class="styles_services-item__amKjx"><h3>Xidmət şəbəkəsi</h3><p>Sənə ən yaxın filial və bankomatı tap</p><img src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/service_network_d79e752cee_c2ec434a57.webp" alt="image/webp"/></div></a><a href="/how-to"><div class="styles_services-item__amKjx"><h3>Necə etməli</h3><p>Məhsul və xidmətlərimizdən daha rahat istifadə üçün təlimatlar burada</p><img src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/how_to_313efa7618_5098741f02.webp" alt="image/webp"/></div></a><a href="https://birbank.az/faq"><div class="styles_services-item__amKjx"><h3>Tez-tez verilən suallar</h3><p>Ən çox verilən sualların cavablarını sənin üçün bir araya
+gətirdik</p><img src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/faq_d65e355c7e_653e8b9cfa.webp" alt="image/webp"/></div></a></div></div></div></main><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXWT6LG" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript></div></div>
+
+
+Footer classes:
+styles_curr-data-footer-indicator__Ma9A5
+styles_curr-data-footer-switch-link__uAaU0
+styles_curr-data-footer-switch___8Rce
+styles_curr-data-footer__lKFzn
+styles_news-card-footer__PfaZ4
+
+
+CSS files:
+/_next/static/css/b17fe763a94a4953.css
+/_next/static/css/b17fe763a94a4953.css
+/_next/static/css/b1c7906582135473.css
+/_next/static/css/b1c7906582135473.css
+/_next/static/css/1ff41bb2a47549ec.css
+/_next/static/css/1ff41bb2a47549ec.css
+/_next/static/css/4cf2ea29959c2164.css
+/_next/static/css/4cf2ea29959c2164.css
+/_next/static/css/5a09a51f79b56411.css
+/_next/static/css/5a09a51f79b56411.css
+/_next/static/css/85a7100915181f27.css
+/_next/static/css/85a7100915181f27.css
+/_next/static/css/3c479c76a7f6fb22.css
+/_next/static/css/3c479c76a7f6fb22.css
+/_next/static/css/3b732d0361d7fd2e.css
+/_next/static/css/3b732d0361d7fd2e.css
+/_next/static/css/3e0b76dcc626fcdf.css
+/_next/static/css/3e0b76dcc626fcdf.css
+/_next/static/css/372a2fad1081b204.css
+/_next/static/css/372a2fad1081b204.css
+
+
+Footer occurrences:
+
+0: pos 43913: Z4"><p>Birbank-dan hərbçilərə özəl sərfəli kredit təklifi: Hər 10 000 AZN kreditə aylıq 300 AZN-dən başlayan ödəniş </p><span>2026-06-23</span></div><
+
+1: pos 44858: Z4"><p>Birbank-ın “Səyahət marafonu” kampaniyasının qaliblərinə hədiyyələr təqdim olundu</p><span>2026-06-11</span></div></div></a><a href="/news/birb
+
+2: pos 45769: Z4"><p>Birbank-dan yenilik: 73 yaşadək təqaüdçülər kredit əldə edə biləcəklər</p><span>2026-06-10</span></div></div></a></div></div><div class="styles
+
+3: pos 49150: zn"><div class="styles_curr-data-footer-indicator__Ma9A5"><span>Kurslar bu tarixə təyin edilmişdir: 25-6-2026</span></div><div class="styles_curr-data
+
+4: pos 49194: cator__Ma9A5"><span>Kurslar bu tarixə təyin edilmişdir: 25-6-2026</span></div><div class="styles_curr-data-footer-switch___8Rce"><a class="styles_curr
+
+5: pos 49312: ch___8Rce"><a class="styles_curr-data-footer-switch-link__uAaU0" href="/currency-rates"><span>Bütün məzənnələr</span><img src="https://strapi-aws-s3-i
+
+6: pos 49361: ch-link__uAaU0" href="/currency-rates"><span>Bütün məzənnələr</span><img src="https://strapi-aws-s3-images-bucket-kb.s3.eu-central-1.amazonaws.com/arr

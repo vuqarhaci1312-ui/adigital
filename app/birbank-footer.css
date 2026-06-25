@@ -1,0 +1,50 @@
+:root {
+  --birbank-primary-text: var(--blue, #0000f8);
+  --birbank-secondary-text: rgba(255, 255, 255, 0.45);
+  --birbank-white: #fff;
+  --birbank-primary-mid-light: #ec3342;
+  --birbank-bottom-line: #f9f9fa;
+}
+
+.birbank-footer .footer{flex-shrink:0;bottom:0;left:0;width:100%;background:var(--birbank-primary-text);color:var(--birbank-white);padding-top:0}.birbank-footer .footer__top{display:grid;grid-template-columns:repeat(3, auto);justify-content:space-between;width:100%;padding-top:40px;padding-bottom:40px;column-gap:60px}@media(max-width: 992px){.birbank-footer .footer__top{grid-template-columns:repeat(1, 1fr)}}@media(max-width: 768px){.birbank-footer .footer__top{padding-top:20px;padding-bottom:24px}}.birbank-footer .footer__bottom{border-top:1px solid var(--birbank-secondary-text);display:flex;justify-content:space-between;width:100%;padding-top:16px;padding-bottom:16px;align-items:center}@media(max-width: 992px){.birbank-footer .footer__bottom{display:block;text-align:center}}.birbank-footer .footer__bottom p{margin:0;font-size:12px;font-weight:400;line-height:16px}@media(max-width: 992px){.birbank-footer .footer__bottom p{order:2;padding-top:24px}}@media(max-width: 992px){.birbank-footer .footer__bottom__desktopCopyright{display:none}}.birbank-footer .footer__bottom__mobileInfo{text-align:left;margin-top:24px}@media(min-width: 992px){.birbank-footer .footer__bottom__mobileInfo{display:none}}.birbank-footer .footer__logo{width:260px;height:64px}@media(max-width: 992px){.birbank-footer .footer__logo{margin:0 auto}}@media(min-width: 992px)and (max-width: 1200px){.birbank-footer .footer__logo{width:200px}}.birbank-footer .footer__container{margin:0 auto;padding:0 16px;display:flex}@media(min-width: 992px){.birbank-footer .footer__container{padding-left:0;padding-right:0}}@media(min-width: 576px){.birbank-footer .footer__container{max-width:542px}}@media(min-width: 768px){.birbank-footer .footer__container{max-width:736px}}@media(min-width: 992px){.birbank-footer .footer__container{max-width:960px}}@media(min-width: 1200px){.birbank-footer .footer__container{max-width:1128px}}@media(max-width: 992px){.birbank-footer .footer__container{flex-direction:column;align-items:inherit}}.birbank-footer .footer__container__info{margin-top:24px;font-size:12px;line-height:16px}@media(min-width: 768px){.birbank-footer .footer__container__info{display:none}}.birbank-footer .footer__links{display:grid;grid-template-columns:repeat(3, 1fr);row-gap:20px;column-gap:60px}@media(min-width: 992px)and (max-width: 1200px){.birbank-footer .footer__links{column-gap:24px}}@media(max-width: 992px){.birbank-footer .footer__links{margin:24px 16px;margin-top:44px !important;grid-template-columns:repeat(2, auto);justify-content:space-between}}@media(max-width: 768px){.birbank-footer .footer__links{column-gap:unset}}@media(max-width: 340px){.birbank-footer .footer__links{margin-left:0;margin-right:0}}.birbank-footer .footer__links ul{list-style-type:none}.birbank-footer .footer__links__socials{display:flex;align-items:center;font-weight:600;font-size:24px;line-height:24px}.birbank-footer .footer__links__socials__item{text-decoration:none;color:var(--birbank-white);margin-right:24px}.birbank-footer .footer__links__socials__item:last-child{margin-right:0}.birbank-footer .footer__links__socials__call{margin-right:24px;color:var(--birbank-primary-mid-light)}.birbank-footer .footer__links__socials__call__text{padding-left:5px}.birbank-footer .footer__links__privacy,.birbank-footer .footer__links__privacy__mobile,.birbank-footer .footer__links__privacy__desktop{font-family:"TT Interphases",sans-serif;font-weight:400;font-size:12px;line-height:16px;color:var(--birbank-white);text-decoration:underline;margin-right:24px}@media(min-width: 992px){.birbank-footer .footer__links__privacy__mobile{display:none}}@media(max-width: 991px){.birbank-footer .footer__links__privacy__desktop{display:none}}@media(max-width: 992px){.birbank-footer .footer__links__privacy{display:none}}.birbank-footer .footer__links__categories{display:flex;flex-wrap:wrap;margin-bottom:24px}.birbank-footer .footer__links__categories__item{text-decoration:none;color:var(--birbank-white);width:max-content;line-height:20px;font-size:16px;margin-right:0 !important;border-bottom:2px solid rgba(0,0,0,0)}.birbank-footer .footer__links__categories__item:hover{border-bottom:2px solid var(--birbank-white)}.birbank-footer .footer__links__categories__item--active{border-bottom:2px solid var(--birbank-white) !important}@media(max-width: 768px){.birbank-footer .footer__links__categories__item:nth-child(even){text-align:right;justify-self:end}}.birbank-footer .footer__links__info{font-size:12px;line-height:16px;margin-top:40px}@media(max-width: 768px){.birbank-footer .footer__links__info{display:none}}.birbank-footer .footer__apps{display:flex;flex-direction:row}.birbank-footer .footer__apps>div{display:flex;flex-direction:column;gap:8px}@media(max-width: 992px){.birbank-footer .footer__apps>div{flex-direction:row;margin:0 auto}}@media(max-width: 349px){.birbank-footer .footer__apps>div{flex-direction:column}}.birbank-footer .footer__apps__qr{width:104px;height:104px;margin-left:8px}@media(max-width: 992px){.birbank-footer .footer__apps__qr{display:none}}.birbank-footer .footer__apps__item{display:flex;align-items:center;text-decoration:none;color:var(--birbank-white);width:150px;height:48px;border:1px solid var(--birbank-white);border-radius:10px;padding:16px 0 16px 14px}.birbank-footer .footer__apps__item img{width:20px;height:20px}.birbank-footer .footer__apps__item__info{margin-left:12px}.birbank-footer .footer__apps__item__info__name{font-weight:500;font-size:16px;line-height:18px}.birbank-footer .footer__apps__item__info__description{font-weight:400;font-size:10px;line-height:18px}
+
+.birbank-footer .footer__logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.birbank-footer .footer__logo .footer__logo-text {
+  color: var(--birbank-white);
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.birbank-footer .footer__links__socials__item svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.birbank-footer .footer__links__socials__call {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.birbank-footer .footer__links__socials__call__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+@media (max-width: 992px) {
+  .birbank-footer .footer__links__socials {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+}

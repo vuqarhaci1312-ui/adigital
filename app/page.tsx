@@ -1,8 +1,10 @@
 import HeroSection from "@/components/home/HeroSection";
-import AmbitionSection from "@/components/home/AmbitionSection";
-import SelectedWorkSection from "@/components/home/SelectedWorkSection";
-import CtaSection from "@/components/home/CtaSection";
-import InsightsSection from "@/components/home/InsightsSection";
+import AboutUsSection from "@/components/home/AboutUsSection";
+import SynexAiSection from "@/components/home/SynexAiSection";
+import AroothServicesSection from "@/components/home/AroothServicesSection";
+import CapvidCtaSection from "@/components/home/CapvidCtaSection";
+import ServicesCardSection from "@/components/home/ServicesCardSection";
+import AroothHomeServicesSection from "@/components/home/AroothHomeServicesSection";
 import Footer from "@/components/layout/Footer";
 
 export default function HomePage() {
@@ -10,10 +12,12 @@ export default function HomePage() {
     <>
       <main>
         <HeroSection />
-        <AmbitionSection />
-        <SelectedWorkSection />
-        <CtaSection />
-        <InsightsSection />
+        <AboutUsSection />
+        <SynexAiSection />
+        <AroothServicesSection />
+        <CapvidCtaSection />
+        <ServicesCardSection />
+        <AroothHomeServicesSection />
       </main>
       <Footer />
     </>

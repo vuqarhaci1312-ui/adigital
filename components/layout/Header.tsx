@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useLenis } from "lenis/react";
 import { useGSAP } from "@gsap/react";
-import { gsap, registerGsap } from "@/lib/gsap";
+import { gsap, registerGsap, ScrollTrigger } from "@/lib/gsap";
 import { useBlurReveal } from "@/hooks/useBlurReveal";
 import { splitNavHideElements } from "@/lib/navSplitText";
 import Logo from "@/components/ui/Logo";
@@ -12,7 +14,10 @@ import { navData, siteContact } from "@/lib/data/home";
 const { links: navLinks, menu: navMenu } = navData;
 
 export default function Header() {
+  const pathname = usePathname();
+  const lenis = useLenis();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navCompact, setNavCompact] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -72,7 +77,7 @@ export default function Header() {
         gsap.set(".nav-hide", { display: "none" });
         gsap.set(burger, { display: "flex", scaleX: 1 });
         button.classList.add("cursor-pointer");
-        button.setAttribute("aria-label", "Navigation menu - Click to open");
+        button.setAttribute("aria-label", "Naviqasiya menyusu — açmaq üçün klikləyin");
         return () => {
           isMobileRef.current = false;
           gsap.set(nav, { "--span": 12 });
@@ -94,11 +99,13 @@ export default function Header() {
               toggleActions: "play none reverse none",
               onEnter: () => {
                 isCompactRef.current = true;
+                setNavCompact(true);
                 button.classList.add("cursor-pointer");
-                button.setAttribute("aria-label", "Navigation menu - Click to open");
+                button.setAttribute("aria-label", "Naviqasiya menyusu — açmaq üçün klikləyin");
               },
               onLeaveBack: () => {
                 isCompactRef.current = false;
+                setNavCompact(false);
                 setMenuOpen(false);
                 button.classList.remove("cursor-pointer");
                 button.removeAttribute("aria-label");
@@ -187,6 +194,40 @@ export default function Header() {
     { scope: headerRef }
   );
 
+  const resetNavExpanded = () => {
+    const nav = navRef.current;
+    const burger = burgerRef.current;
+    const button = buttonRef.current;
+    if (!nav || !burger || !button) return;
+
+    isCompactRef.current = false;
+    setNavCompact(false);
+    setMenuOpen(false);
+
+    gsap.set(nav, { "--span": 12 });
+    gsap.set(nav.querySelectorAll(".nav-hide"), {
+      display: "",
+      opacity: "",
+      visibility: "",
+      width: "",
+      maxWidth: "",
+    });
+    splitWordsRef.current.forEach((word) => gsap.set(word, { yPercent: 0 }));
+    gsap.set(burger, { display: "", scaleX: 0 });
+    button.classList.remove("cursor-pointer");
+    button.removeAttribute("aria-label");
+  };
+
+  useEffect(() => {
+    resetNavExpanded();
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
+    requestAnimationFrame(() => ScrollTrigger.refresh());
+  }, [pathname, lenis]);
+
   useEffect(() => {
     if (!menuOpen) return;
     let removeScroll: (() => void) | undefined;
@@ -257,7 +298,7 @@ export default function Header() {
         ref={navRef}
         onMouseEnter={handleNavMouseEnter}
         onMouseLeave={handleNavMouseLeave}
-        className="span bg-light-gray/60 relative rounded-lg shadow-[0_0_60px_0_rgba(255,255,255,0.3)_inset,0_0_60px_0_rgba(255,255,255,0.3)_inset,0_4px_20px_0_rgba(0,0,20,0.2)] ring-2 ring-white/30 backdrop-blur-lg [--span:12]"
+        className={`span bg-light-gray/60 relative rounded-lg shadow-[0_0_60px_0_rgba(255,255,255,0.3)_inset,0_0_60px_0_rgba(255,255,255,0.3)_inset,0_4px_20px_0_rgba(0,0,20,0.2)] ring-2 ring-white/30 backdrop-blur-lg [--span:12]${navCompact ? " nav-is-compact" : ""}`}
       >
         <button
           ref={buttonRef}
@@ -271,7 +312,7 @@ export default function Header() {
           <Link
             className="block w-22 shrink-0"
             href="/"
-            aria-label="Home"
+            aria-label="Ana səhifə"
             onClick={(e) => e.stopPropagation()}
           >
             <span className="wrapper">

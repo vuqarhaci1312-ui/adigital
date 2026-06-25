@@ -1,0 +1,32 @@
+.footer},g().createElement("div",{className:gW.footer__container}
+.footer__top},g().createElement("div",{className:gW.footer__logo}
+.footer__links},Q?.map(({link:A,name:M,id:Q}
+.footer__links__categories__item,{[gW.footer__links__categories__item__active]:window.location.href===A}
+.footer__apps},g().createElement("div",null,gb[B].map(({link:M,name:Q,image:I,birbankInvestimage:w,description:E,id:C}
+.footer__apps__item,href:gi(M,B),key:C},g().createElement("img",{className:gW.footer__links__socials__call__image,src:gz(A?w:I),alt:"196",width:24,height:24}
+.footer__apps__item__info},g().createElement("div",{className:gW.footer__apps__item__info__name}
+.footer__apps__item__info__description},E))))),g().createElement("img",{className:gW.footer__apps__qr,src:gJ,alt:"qr"}
+.footer__container},g().createElement("div",{className:gW.footer__bottom}
+.footer__bottom__desktopCopyright},`\xa9 ${I}
+.footer__links__socials},g().createElement("a",{className:gW.footer__links__privacy,href:gi("/privacy-policy",B)}
+.footer__links__socials__call}
+            ${A?gW.birbankInvestTextColor:""}
+.footer__links__socials__call__text},"196")),g().createElement("a",{className:gW.footer__links__socials__item,href:"https://www.facebook.com/birbank"}
+.footer__links__socials__item,href:"https://www.instagram.com/birbank.az/"},g().createElement(B8,{icon:gh}
+.footer__links__socials__item,href:"https://www.youtube.com/channel/UC1p5TDF6qfzUm4sPqSYSGUA"},g().createElement(B8,{icon:gn}
+.footer__bottom__mobileInfo},g().createElement("a",{className:gW.footer__links__privacy__mobile,href:gi("/privacy-policy",B)}
+.footer__top__links__categories},g().createElement("div",{className:g$.footer__top__links__categories__title}
+.footer__top__links__categories__item},A)))),M=g().createElement("div",{className:gH()(g$.footer__top__links__categories,g$.footer__apps)}
+.footer__apps__title},gZ[A].title),g().createElement("img",{className:g$.footer__apps__qr,src:gJ,alt:"qr"}
+.footer__apps__list},gZ[A].children.map(({link:A,name:B,image:M,description:Q,id:I}
+.footer__apps__item,href:A,key:I},g().createElement("img",{className:g$.footer__apps__item__image,src:M,alt:B}
+.footer__apps__item__info},g().createElement("div",{className:g$.footer__apps__item__info__name}
+.footer__apps__item__info__description},Q))))));return g().createElement("footer",{className:g$.footer}
+.footer__container},g().createElement("div",{className:g$.footer__top}
+.footer__top__links},B,M))),g().createElement("div",{className:gH()(g$.footer__container,g$.footer__contactSection)}
+.footer__contactSection__socials},g().createElement("a",{href:"tel:196",className:g$.footer__contactSection__socials__call}
+.footer__contactSection__socials__item,href:B},g().createElement(B8,{icon:A}
+.footer__container,g$.footer__companies)},g().createElement("div",{className:g$.footer__companies__copyright}
+.footer__companies__links},gp.map(({icon:A,id:B}
+.footer__companies__links__item},g().createElement("img",{src:A,alt:B,className:g$[`${B}
+.footer__container},g().createElement("div",{className:g$.footer__license}

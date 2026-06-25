@@ -1,0 +1,706 @@
+/* Service detail pages — thefinch digital-marketing / SEO templates */
+
+@font-face {
+  font-display: swap;
+  font-family: "Bw Gradual";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://thefinch.design/wp-content/themes/gp-starter/assets/fonts/BwGradual-Light.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Bw Gradual";
+  font-style: italic;
+  font-weight: 700;
+  src: url("https://thefinch.design/wp-content/themes/gp-starter/assets/fonts/BwGradual-BoldItalic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://thefinch.design/wp-content/themes/gp-starter/assets/fonts/Lexend-Light.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://thefinch.design/wp-content/themes/gp-starter/assets/fonts/Lexend-SemiBold.woff2")
+    format("woff2");
+}
+
+/* thefinch html 10px root → body 1.2rem = 12px base on service pages */
+.page-service-detail {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #000;
+  font-family: Lexend, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.page-service-detail .container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100% !important;
+  padding-inline: 20px !important;
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .page-service-detail .container {
+    padding-inline: 30px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-service-detail .container {
+    max-width: 920px !important;
+    padding-inline: 15px !important;
+  }
+}
+
+@media (min-width: 1199px) {
+  .page-service-detail .container {
+    max-width: 1240px !important;
+  }
+}
+
+.page-service-detail .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+}
+
+.page-service-detail .row.justify-content-center {
+  justify-content: center;
+}
+
+.page-service-detail .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.page-service-detail .col-md-4,
+.page-service-detail .col-md-6,
+.page-service-detail .col-md-10 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .page-service-detail .col-md-4,
+  .page-service-detail .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .page-service-detail .col-md-10 {
+    flex: 0 0 83.333%;
+    max-width: 83.333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-service-detail .col-lg-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+
+  .page-service-detail .col-lg-8 {
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+  }
+
+  .page-service-detail .col-lg-10 {
+    flex: 0 0 83.333%;
+    max-width: 83.333%;
+    margin: 0 auto;
+  }
+}
+
+/* inner-masthead.service-detail */
+.page-service-detail .inner-masthead {
+  position: relative;
+}
+
+.page-service-detail
+  .inner-masthead.service-detail-inner-masthead
+  ul.portfolio-inner-masthead__breadcrumb {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .page-service-detail
+    .inner-masthead.service-detail-inner-masthead
+    ul.portfolio-inner-masthead__breadcrumb {
+    margin: 0 0 30px;
+  }
+}
+
+.page-service-detail
+  .inner-masthead.service-detail-inner-masthead
+  ul.portfolio-inner-masthead__breadcrumb
+  li {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.page-service-detail
+  .inner-masthead.service-detail-inner-masthead
+  ul.portfolio-inner-masthead__breadcrumb
+  li
+  span {
+  color: #8d8d8d;
+  display: inline-flex;
+  font-weight: 500;
+  margin-left: 5px;
+  max-width: 20px;
+  width: 100%;
+}
+
+.page-service-detail
+  .inner-masthead.service-detail-inner-masthead
+  ul.portfolio-inner-masthead__breadcrumb
+  li
+  a {
+  color: #8d8d8d;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.page-service-detail
+  .inner-masthead.service-detail-inner-masthead
+  ul.portfolio-inner-masthead__breadcrumb
+  li.active
+  a,
+.page-service-detail
+  .inner-masthead.service-detail-inner-masthead
+  ul.portfolio-inner-masthead__breadcrumb
+  li.active
+  span {
+  color: #000;
+}
+
+.page-service-detail .inner-masthead.service-detail-inner-masthead .row {
+  padding: 50px 0 70px;
+}
+
+@media (min-width: 768px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead .row {
+    padding: 120px 0 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead .row {
+    padding: 150px 0 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-height: 767px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead .row {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 1399px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead .row {
+    padding: 100px 0 200px;
+  }
+}
+
+@media (min-width: 1699px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead .row {
+    padding: 150px 0 200px;
+  }
+}
+
+.page-service-detail .inner-masthead.service-detail-inner-masthead .row p {
+  max-width: 80%;
+}
+
+.page-service-detail .inner-masthead.service-detail-inner-masthead h1 {
+  color: #000;
+  font-family: "Bw Gradual", sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  line-height: 52px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead h1 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-height: 769px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead h1 {
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead h1 {
+    font-size: 80px;
+    line-height: 90px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead h1 {
+    font-size: 100px;
+    line-height: 110px;
+  }
+}
+
+@media (min-width: 1699px) {
+  .page-service-detail .inner-masthead.service-detail-inner-masthead h1 {
+    font-size: 110px;
+    line-height: 120px;
+  }
+}
+
+.page-service-detail h1 span,
+.page-service-detail h2 span {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.page-service-detail .inner-masthead.service-detail-inner-masthead h1 em,
+.page-service-detail .inner-masthead.service-detail-inner-masthead h1 strong {
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.page-service-detail .inner-masthead p {
+  color: #545454;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .page-service-detail .inner-masthead p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.page-service-detail .inner-masthead.service-detail-inner-masthead .wp-block-button {
+  margin-top: 30px;
+}
+
+.page-service-detail .caption-1 {
+  font-family: Lexend, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+@media (min-width: 1024px) {
+  .page-service-detail .caption-1 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.page-service-detail .caption-2 {
+  font-family: Lexend, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+/* thefinch .headline — Lexend, not Bw Gradual */
+.page-service-detail .headline {
+  font-family: Lexend, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1380px) {
+  .page-service-detail .headline {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.page-service-detail .dark-bg .headline {
+  color: #fff;
+}
+
+/* fill-alt-v2 CTA */
+.page-service-detail .wp-block-button {
+  margin: 0;
+}
+
+.page-service-detail .wp-block-button.is-style-fill-alt-v2 a {
+  align-items: center;
+  background: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: none;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Lexend, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 10px;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  outline: 0;
+  overflow: hidden;
+  padding: 15px 32px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: auto;
+}
+
+@media (min-width: 576px) {
+  .page-service-detail .wp-block-button.is-style-fill-alt-v2 a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.page-service-detail .wp-block-button.is-style-fill-alt-v2 a .btn-text,
+.page-service-detail .wp-block-button.is-style-fill-alt-v2 a .gp-arrow {
+  display: flex;
+  transition: all 0.5s;
+}
+
+.page-service-detail .wp-block-button.is-style-fill-alt-v2 a .gp-arrow svg {
+  height: 20px;
+  transition: all 0.5s;
+  width: 20px;
+}
+
+.page-service-detail
+  .wp-block-button.is-style-fill-alt-v2
+  a:hover
+  .gp-arrow
+  svg {
+  transform: rotate(45deg);
+}
+
+.page-service-detail .technology-benefit--contact .wp-block-button.is-style-fill a {
+  align-items: center;
+  background: linear-gradient(90deg, #005bff -16.75%, #2a00cd 113.25%);
+  border: none;
+  border-radius: 25px;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Lexend, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 10px;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  outline: 0;
+  overflow: hidden;
+  padding: 15px 32px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (min-width: 576px) {
+  .page-service-detail .technology-benefit--contact .wp-block-button.is-style-fill a {
+    box-shadow: 0 12px 32px 0 rgba(0, 68, 191, 0.4);
+  }
+}
+
+.page-service-detail
+  .portfolio-inner-masthead__breadcrumb
+  .caption-1 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.page-service-detail .page-service-detail__inner {
+  width: 100%;
+}
+
+/* Bölmə fonları və gradient — block CSS desktop transparent override */
+.page-service-detail .service-listing.darkblue {
+  background: linear-gradient(132.98deg, #003aa1 -30.13%, #001a49 100%) !important;
+}
+
+.page-service-detail .service-listing.lightblue {
+  background: linear-gradient(108.07deg, #005bff -21.16%, #003189 99.18%) !important;
+}
+
+.page-service-detail .dark-bg {
+  background: #000;
+  color: #fff;
+}
+
+/* SplitText clip — thefinch style-min */
+.page-service-detail h1 .split-line,
+.page-service-detail h2 .split-line,
+.page-service-detail h3 .split-line,
+.page-service-detail h4 .split-line,
+.page-service-detail h5 .split-line,
+.page-service-detail h6 .split-line,
+.page-service-detail p .split-line {
+  display: block;
+  overflow: hidden;
+}
+
+.page-service-detail .split-word {
+  display: inline-block;
+  position: relative;
+}
+
+/* Typography — thefinch style-min (10px root → px) */
+.page-service-detail h2 {
+  color: #000;
+  font-family: "Bw Gradual", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  line-height: 44px;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .page-service-detail h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-service-detail h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-service-detail h2 {
+    font-size: 70px;
+    line-height: 88px;
+  }
+}
+
+@media (min-width: 1699px) {
+  .page-service-detail h2 {
+    font-size: 80px;
+    line-height: normal;
+  }
+}
+
+.page-service-detail .dark-bg h2,
+.page-service-detail .technology-benefit.dark-bg .technology-benefit--heading h2 {
+  color: #fff;
+}
+
+.page-service-detail h2 span {
+  display: block;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Section heading rəngləri — theme h2 qara override aradan qaldırılır */
+.page-service-detail .service-listing.darkblue .service-listing--heading h2,
+.page-service-detail .service-listing.lightblue .service-listing--heading h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.page-service-detail .service-listing.darkblue .service-listing--heading p,
+.page-service-detail .service-listing.lightblue .service-listing--heading p {
+  color: #edf4ff;
+}
+
+.page-service-detail .service-listing.darkblue .service-listing--wrapper-card p.caption-1,
+.page-service-detail .service-listing.lightblue .service-listing--wrapper-card p.caption-1 {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.page-service-detail .service-listing--heading h2,
+.page-service-detail .technology-benefit--heading h2,
+.page-service-detail .consulting-process--heading h2 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-service-detail .service-listing--heading h2,
+  .page-service-detail .technology-benefit--heading h2,
+  .page-service-detail .consulting-process--heading h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.page-service-detail .h6-size,
+.page-service-detail h3.h6-size,
+.page-service-detail h6 {
+  color: #000;
+  font-family: Lexend, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+
+.page-service-detail .h6-size strong,
+.page-service-detail h3.h6-size strong,
+.page-service-detail h6 strong {
+  font-weight: 500;
+}
+
+@media (min-width: 1699px) {
+  .page-service-detail .h6-size,
+  .page-service-detail h3.h6-size,
+  .page-service-detail h6 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.page-service-detail .service-listing--wrapper-card h3.headline {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.page-service-detail .service-listing--heading h2,
+.page-service-detail .service-listing--heading p {
+  text-align: center;
+}
+
+.page-service-detail .technology-benefit--heading h2,
+.page-service-detail .technology-benefit--heading p,
+.page-service-detail .consulting-process--heading h2,
+.page-service-detail .consulting-process--heading p {
+  text-align: center;
+}
+
+.page-service-detail .technology-benefit--heading p,
+.page-service-detail .consulting-process--heading p {
+  color: #545454;
+}
+
+.page-service-detail .dark-bg .technology-benefit--heading p {
+  color: #8d8d8d;
+}
+
+.page-service-detail .dark-bg h5.headline {
+  color: #fff;
+}
+
+.page-service-detail .consulting-process--wrapper-card-box-content h6 {
+  font-family: Lexend, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1699px) {
+  .page-service-detail .consulting-process--wrapper-card-box-content h6 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.page-service-detail .consulting-process--wrapper-card-box-content p {
+  color: #545454;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.page-service-detail .consulting-process--wrapper-card-img svg path {
+  fill: none;
+  stroke: #005bff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3.5;
+  visibility: hidden;
+}
+
+@media (min-width: 992px) {
+  .page-service-detail .consulting-process--wrapper-card-box-content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 993px) {
+  .page-service-detail section[data-bgcolor="#fff"] {
+    background: #fff !important;
+  }
+
+  .page-service-detail section[data-bgcolor="#000"] {
+    background: #000 !important;
+  }
+}
+
+.page-service-detail .technology-benefit:has(+ .consulting-process)::before {
+  background: #d9d9d9;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  z-index: 2;
+}
+
+@media (min-width: 1380px) {
+  .page-service-detail .technology-benefit:has(+ .consulting-process)::before {
+    max-width: 1328px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,86 @@
+/* Service card interactions — matches Arooth Webflow a-83/a-84 + a-5 */
+
+.arooth-services .single-service-hover-bg {
+  transition: height 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.arooth-services .single-service-name,
+.arooth-services .single-service-details {
+  transition: color 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.arooth-services .service-more-button {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.arooth-services .more-button-arrow,
+.arooth-services .more-button-arrow-hover {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.arooth-services .more-button-arrow-hover {
+  transform: translate(-1.5rem, 1.5rem);
+}
+
+.arooth-services .single-service-wrap.is-reveal-pending {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(5px);
+}
+
+.arooth-services .single-service-wrap.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  transition:
+    opacity 0.5s ease 0.3s,
+    transform 0.5s ease 0.3s,
+    filter 0.5s ease 0.3s;
+}
+
+.arooth-services .single-service-wrap:is(:hover, .is-hovered) .single-service-hover-bg {
+  height: 100%;
+}
+
+.arooth-services .single-service-wrap:is(:hover, .is-hovered) .single-service-name {
+  color: var(--white);
+}
+
+.arooth-services .single-service-wrap:is(:hover, .is-hovered) .single-service-details {
+  color: var(--white);
+}
+
+.arooth-services .single-service-wrap:is(:hover, .is-hovered) .service-more-button:not(.absolute) {
+  transform: translate(0, -100%);
+}
+
+.arooth-services .single-service-wrap:is(:hover, .is-hovered) .service-more-button.absolute {
+  transform: translate(0, 0);
+  z-index: 2;
+}
+
+.arooth-services .more-button:hover .more-button-arrow {
+  transform: translate(1.5rem, -1.5rem);
+}
+
+.arooth-services .more-button:hover .more-button-arrow-hover {
+  transform: translate(0, 0);
+}
+
+@media (hover: none) {
+  .arooth-services .single-service-wrap {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Spacing + color bridge into Show Reels (light → dark) */
+.arooth-services {
+  background: #fff;
+  overflow: visible;
+}
+
+.arooth-services .section.service {
+  position: relative;
+  z-index: 1;
+  padding-bottom: clamp(3rem, 8vw, 5rem);
+}

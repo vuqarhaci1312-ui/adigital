@@ -1,0 +1,32 @@
+3294.f59e4c65a9d255d2.js | facebook
+le-play-app",content:"app-id=az.kapitalbank.mbanking"}),(0,a.jsx)("meta",{name:"facebook-domain-verification",content:"9yt31ayw5722kp092cwnhdhwd4v2iq"}),(0,a.jsx)("meta",{name:"yandex-verification",content:"e89e71cc81a5d4d4"}),p?(0,a.jsx)("meta",{name:"description",content:p}):nu
+
+---
+
+9561.67429b2c81f009be.js | Footer
+:()=>[23565]},ssr:!1}),d=n()(()=>r.e(2951).then(r.t.bind(r,23565,23)).then(e=>e.Footer),{loadableGenerated:{webpack:()=>[23565]},ssr:!1}),k=n()(()=>Promise.all([r.e(2863),r.e(6281),r.e(4800),r.e(9416),r.e(3575),r.e(4991),r.e(6635),r.e(5675),r.e(7803),r.e(503),r.e(3942)]).then(r.b
+
+---
+
+5645.806afdc801c16d58.js | footer
+360,className:c()["image-main"]})]}),(0,t.jsxs)("div",{className:c()["news-card-footer"],children:[(0,t.jsx)("p",{children:s}),(0,t.jsx)("span",{children:i})]})]})})}},95645:function(e,s,i){"use strict";i.r(s);var t=i(85893),n=i(36679),a=i(41664),r=i.n(a),l=i(81627);i(67294);var 
+
+---
+
+5815.5b22dbd11ee4d3ba.js | footer
+),(0,r.jsx)(o.Z,{currencyList:e})]}),(0,r.jsxs)("div",{className:d()["curr-data-footer"],children:[(0,r.jsx)("div",{className:d()["curr-data-footer-indicator"],children:(0,r.jsx)("span",{children:"".concat(a("infoText")," ").concat((0,s.v)())})}),(0,r.jsx)("div",{className:d()["c
+
+---
+
+framework-3bc9684f49160ebb.js | 196
+<(r=(120>(r=eJ()-r)?120:480>r?480:1080>r?1080:1920>r?1920:3e3>r?3e3:4320>r?4320:1960*oZ(r/1960))-r)){e.timeoutHandle=rk(uO.bind(null,e,ua,uu),r);break}uO(e,ua,uu);break;default:throw Error(f(329))}}}return uw(e,eJ()),e.callbackNode===n?uS.bind(null,e):null}function ux(e,t){var n=
+
+---
+
+main-fdd759befc4bb544.js | facebook
+baiduspider|yandex|sogou|LinkedInBot|bitlybot|tumblr|vkShare|quora link preview|facebookexternalhit|facebookcatalog|Twitterbot|applebot|redditbot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|ia_archiver/i.test(e)}Object.defineProperty(t,"__esModule",{value:!0}),Object.definePrope
+
+---
+
+index-7f13411b5328544d.js | facebook
+le-play-app",content:"app-id=az.kapitalbank.mbanking"}),(0,n.jsx)("meta",{name:"facebook-domain-verification",content:"9yt31ayw5722kp092cwnhdhwd4v2iq"}),(0,n.jsx)("meta",{name:"yandex-verification",content:"e89e71cc81a5d4d4"}),l?(0,n.jsx)("meta",{name:"description",content:l}):nu
