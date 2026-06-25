@@ -491,7 +491,7 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
-        touch-action: pan-x;
+        touch-action: manipulation;
         width: calc(100% + 40px)
     }
 
@@ -504,6 +504,7 @@
         min-width: calc(100vw - 40px);
         scroll-snap-align: center;
         scroll-snap-stop: always;
+        touch-action: manipulation;
         width: auto
     }
 }

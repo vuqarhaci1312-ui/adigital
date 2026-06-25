@@ -18,7 +18,8 @@ export function useServicesCard(sectionRef: RefObject<HTMLElement | null>) {
 
     mm.add(
       {
-        desktop: `(min-width: ${DESKTOP_MIN + 1}px) and (min-height: ${MIN_VIEWPORT_HEIGHT}px)`,
+        desktop:
+          "(min-width: 993px) and (min-height: 586px) and (hover: hover) and (pointer: fine)",
       },
       (context) => {
         const { desktop } = context.conditions ?? {};

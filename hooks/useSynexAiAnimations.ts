@@ -3,9 +3,10 @@
 import { RefObject } from "react";
 import { useLenis } from "lenis/react";
 import { useGSAP } from "@gsap/react";
-import { gsap, registerGsap } from "@/lib/gsap";
+import { gsap, ScrollTrigger, registerGsap } from "@/lib/gsap";
 import { getAroothScroller } from "@/lib/arooth/aroothScrollTrigger";
 import {
+  connectLenisScrollTrigger,
   refreshScrollTriggers,
 } from "@/lib/lenisScrollTrigger";
 import { splitTextPreserveStructure } from "@/lib/splitText";
@@ -177,14 +178,43 @@ export function useSynexAiAnimations(
   useGSAP(
     () => {
       registerGsap();
+      if (!lenis) return;
+
+      connectLenisScrollTrigger(lenis);
 
       const introSection = introRef.current;
       const featureSection = featureRef.current;
       if (!introSection || !featureSection) return;
 
-      setupIntroScroll(introSection);
-      setupFeatureMotion(featureSection);
-      refreshScrollTriggers();
+      const isTouch =
+        window.matchMedia("(pointer: coarse)").matches ||
+        window.matchMedia("(hover: none)").matches;
+
+      if (isTouch) {
+        ScrollTrigger.normalizeScroll(true);
+      }
+
+      const ctx = gsap.context(() => {
+        setupIntroScroll(introSection);
+        setupFeatureMotion(featureSection);
+      }, introSection);
+
+      const refresh = () => refreshScrollTriggers();
+      refresh();
+      const refreshTimers = [
+        window.setTimeout(refresh, 100),
+        window.setTimeout(refresh, 500),
+      ];
+
+      window.addEventListener("orientationchange", refresh, { passive: true });
+      window.visualViewport?.addEventListener("resize", refresh, { passive: true });
+
+      return () => {
+        refreshTimers.forEach((id) => window.clearTimeout(id));
+        window.removeEventListener("orientationchange", refresh);
+        window.visualViewport?.removeEventListener("resize", refresh);
+        ctx.revert();
+      };
     },
     { dependencies: [lenis] }
   );
