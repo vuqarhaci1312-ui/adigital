@@ -64,6 +64,8 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
         syncTouch: false,
         smoothWheel: true,
         allowNestedScroll: true,
+        prevent: (node) =>
+          Boolean(node.closest?.(".services-card--carousel")),
       }}
     >
       <ScrollTriggerLenisSync />

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import { servicesCardData, type ServiceCardItem } from "@/lib/data/servicesCard";
 import { useServicesCard } from "@/hooks/useServicesCard";
+import { useServicesCardCarousel } from "@/hooks/useServicesCardCarousel";
 
 function ViewAllArrow() {
   return (
@@ -87,7 +88,9 @@ function ServiceCard({
 
 export default function ServicesCardSection() {
   const sectionRef = useRef<HTMLElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
   useServicesCard(sectionRef);
+  useServicesCardCarousel(carouselRef);
 
   const { viewAllLabel, cards } = servicesCardData;
 
@@ -102,6 +105,7 @@ export default function ServicesCardSection() {
         <div className="row services-card--item-row">
           <div className="col-12">
             <div
+              ref={carouselRef}
               className="services-card--carousel"
               data-lenis-prevent
               data-lenis-prevent-touch

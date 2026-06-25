@@ -475,7 +475,9 @@
     .services-card--item-row .col-12 {
         display: block;
         gap: 0;
-        min-height: auto !important
+        min-height: auto !important;
+        min-width: 0;
+        overflow: visible
     }
 
     .services-card--carousel {
@@ -484,7 +486,7 @@
         flex-wrap: nowrap;
         gap: 1rem;
         margin-inline: -20px;
-        overflow-x: auto;
+        overflow-x: scroll;
         overflow-y: hidden;
         overscroll-behavior-x: contain;
         padding: 0 20px 0.5rem;
@@ -492,8 +494,15 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
-        touch-action: pan-x pan-y;
-        width: calc(100% + 40px)
+        touch-action: pan-y;
+        width: calc(100% + 40px);
+        cursor: grab
+    }
+
+    .services-card--carousel.is-dragging {
+        cursor: grabbing;
+        scroll-behavior: auto;
+        scroll-snap-type: none
     }
 
     .services-card--carousel::-webkit-scrollbar {
@@ -503,9 +512,11 @@
     .services-card--carousel .services-card--item {
         flex: 0 0 calc(100vw - 40px);
         min-width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
         scroll-snap-align: center;
         scroll-snap-stop: always;
-        touch-action: pan-x pan-y;
-        width: auto
+        touch-action: pan-y;
+        user-select: none;
+        width: calc(100vw - 40px)
     }
 }
