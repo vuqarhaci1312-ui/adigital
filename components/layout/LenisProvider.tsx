@@ -9,6 +9,10 @@ import {
   refreshScrollTriggers,
 } from "@/lib/lenisScrollTrigger";
 
+function isMobileCarouselActive() {
+  return window.matchMedia("(max-width: 991px)").matches;
+}
+
 function ScrollTriggerLenisSync() {
   const lenis = useLenis();
 
@@ -65,6 +69,7 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
         smoothWheel: true,
         allowNestedScroll: true,
         prevent: (node) =>
+          isMobileCarouselActive() &&
           Boolean(node.closest?.(".services-card--carousel")),
       }}
     >

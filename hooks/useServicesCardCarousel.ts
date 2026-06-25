@@ -2,7 +2,7 @@
 
 import { type RefObject, useEffect } from "react";
 
-const CAROUSEL_QUERY = "(hover: none), (max-width: 991px)";
+const CAROUSEL_QUERY = "(max-width: 991px)";
 
 export function useServicesCardCarousel(
   carouselRef: RefObject<HTMLElement | null>,
@@ -12,6 +12,7 @@ export function useServicesCardCarousel(
     if (!carousel) return;
 
     const mq = window.matchMedia(CAROUSEL_QUERY);
+    if (!mq.matches) return;
 
     let activePointer: number | null = null;
     let startX = 0;
@@ -42,7 +43,7 @@ export function useServicesCardCarousel(
     };
 
     const onPointerDown = (event: PointerEvent) => {
-      if (!mq.matches || event.pointerType === "mouse") return;
+      if (event.pointerType === "mouse") return;
 
       activePointer = event.pointerId;
       startX = event.clientX;

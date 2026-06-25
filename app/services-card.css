@@ -470,8 +470,8 @@
     }
 }
 
-/* Touch phones & tablets: horizontal swipe carousel */
-@media (max-width: 991px), (hover: none) {
+/* Touch phones: horizontal swipe carousel */
+@media (max-width: 991px) {
     .services-card--item-row .col-12 {
         display: block;
         gap: 0;

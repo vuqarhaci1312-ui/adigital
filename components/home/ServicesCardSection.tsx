@@ -104,12 +104,7 @@ export default function ServicesCardSection() {
       <div className="container">
         <div className="row services-card--item-row">
           <div className="col-12">
-            <div
-              ref={carouselRef}
-              className="services-card--carousel"
-              data-lenis-prevent
-              data-lenis-prevent-touch
-            >
+            <div ref={carouselRef} className="services-card--carousel">
               {cards.map((card) => (
                 <ServiceCard key={card.variant} card={card} viewAllLabel={viewAllLabel} />
               ))}

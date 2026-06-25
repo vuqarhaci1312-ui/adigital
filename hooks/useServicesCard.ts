@@ -1,15 +1,27 @@
 "use client";
 
 import { type RefObject, useEffect } from "react";
+import { useLenis } from "lenis/react";
 import { gsap, registerGsap, ScrollTrigger } from "@/lib/gsap";
-import { refreshScrollTriggers } from "@/lib/lenisScrollTrigger";
+import { getAroothScroller } from "@/lib/arooth/aroothScrollTrigger";
+import {
+  connectLenisScrollTrigger,
+  refreshScrollTriggers,
+} from "@/lib/lenisScrollTrigger";
 
 const DESKTOP_MIN = 992;
 const MIN_VIEWPORT_HEIGHT = 586;
 
+const DESKTOP_PIN_QUERY = `(min-width: ${DESKTOP_MIN + 1}px) and (min-height: ${MIN_VIEWPORT_HEIGHT}px) and (hover: hover) and (pointer: fine)`;
+
 export function useServicesCard(sectionRef: RefObject<HTMLElement | null>) {
+  const lenis = useLenis();
+
   useEffect(() => {
     registerGsap();
+    if (!lenis) return;
+
+    connectLenisScrollTrigger(lenis);
 
     const section = sectionRef.current;
     if (!section) return;
@@ -18,14 +30,14 @@ export function useServicesCard(sectionRef: RefObject<HTMLElement | null>) {
 
     mm.add(
       {
-        desktop:
-          "(min-width: 993px) and (min-height: 586px) and (hover: hover) and (pointer: fine)",
+        desktop: DESKTOP_PIN_QUERY,
       },
       (context) => {
         const { desktop } = context.conditions ?? {};
         if (!desktop || !section) return;
 
         const ctx = gsap.context(() => {
+          const scroller = getAroothScroller();
           const items = gsap.utils.toArray<HTMLElement>(
             section.querySelectorAll(".services-card--item"),
           );
@@ -34,6 +46,7 @@ export function useServicesCard(sectionRef: RefObject<HTMLElement | null>) {
           items.forEach((item, index) => {
             ScrollTrigger.create({
               trigger: item,
+              scroller,
               start: () => `top+=${item.offsetHeight / 2}px center`,
               end: "top bottom",
               pin: true,
@@ -65,5 +78,5 @@ export function useServicesCard(sectionRef: RefObject<HTMLElement | null>) {
       window.removeEventListener("resize", onResize);
       mm.revert();
     };
-  }, [sectionRef]);
+  }, [sectionRef, lenis]);
 }
