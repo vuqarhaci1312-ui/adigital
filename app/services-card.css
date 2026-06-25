@@ -463,14 +463,15 @@
     color: #fff
 }
 
-/* Mobile: horizontal swipe carousel — one card per view */
-@media (min-width: 992px) {
+/* Desktop (mouse): stacked cards */
+@media (min-width: 992px) and (hover: hover) {
     .services-card--carousel {
         display: contents
     }
 }
 
-@media (max-width: 991px) {
+/* Touch phones & tablets: horizontal swipe carousel */
+@media (max-width: 991px), (hover: none) {
     .services-card--item-row .col-12 {
         display: block;
         gap: 0;
@@ -491,7 +492,7 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
-        touch-action: manipulation;
+        touch-action: pan-x pan-y;
         width: calc(100% + 40px)
     }
 
@@ -504,7 +505,7 @@
         min-width: calc(100vw - 40px);
         scroll-snap-align: center;
         scroll-snap-stop: always;
-        touch-action: manipulation;
+        touch-action: pan-x pan-y;
         width: auto
     }
 }

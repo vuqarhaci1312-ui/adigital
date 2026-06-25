@@ -63,6 +63,7 @@ export default function LenisProvider({ children }: { children: React.ReactNode 
         autoRaf: false,
         syncTouch: false,
         smoothWheel: true,
+        allowNestedScroll: true,
       }}
     >
       <ScrollTriggerLenisSync />
